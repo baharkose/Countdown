@@ -36,7 +36,7 @@ const interval = setInterval(() =>{
         // set interval method used for updated countdown inner html
         
         countdown.innerHTML = `
-            <div>${days}<div>
+            <div>${days}</div>
             <div>${hours}</div>
             <div>${minutes}</div>
             <div>${seconds}</div>
