@@ -34,12 +34,16 @@ const interval = setInterval(() =>{
         const seconds = Math.floor(diff/(1000) % 60)
         
         // set interval method used for updated countdown inner html
+
+
+        // data-content is used to store speacial information into HTML elements
         
+        // data-content is used in style.css as countdown div pseudo elements.
         countdown.innerHTML = `
-            <div>${days}</div>
-            <div>${hours}</div>
-            <div>${minutes}</div>
-            <div>${seconds}</div>
+            <div data-content="Days">${days}</div>
+            <div data-content="Hours">${hours}</div>
+            <div data-content="Minutes">${minutes}</div>
+            <div data-content="Seconds">${seconds}</div>
         `
     
     
