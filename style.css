@@ -7,6 +7,7 @@
 
 html{
     font-size: 62.5%;
+    font-family: 'Orbitron', sans-serif;
 }
 
 .container{
@@ -133,8 +134,8 @@ html{
     font-weight: 600;
 }
 
-.timer-list select,
-input{
+.timer-list select
+{
    border: #17181b;
     /* align-items: center; */
     background-color: rgba(94, 91, 91, 0.255);
@@ -149,6 +150,8 @@ input{
 /* MODAL'S STYLING STARTED*/
 /* The Modal (background) */
 .modal {
+    border: none;
+    outline: none;
     font-size: 2rem;
    
     display: none; /* Hidden by default */
@@ -168,11 +171,12 @@ input{
   .modal-content {
     color: #000;
     position: relative;
-    background-color: #fefefe;
+    background-color: #edecec;
     margin: auto;
-    padding: 0;
+    padding:0;
+    /* padding-bottom: 3rem; */
     border: 1px solid #888;
-    width: 80%;
+    width: 60%;
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
     -webkit-animation-name: animatetop;
     -webkit-animation-duration: 0.4s;
@@ -212,15 +216,17 @@ input{
     color: white;
   }
   
-  .modal-body {padding: 2px 16px;}
+  .modal-body {
+    margin: 3rem 0;
+}
   .modal-body *{
     color: #000 !important;
   }
-  .modal-footer {
+  /* .modal-footer {
     padding: 2px 16px;
     background-color: #262424;
     color: white;
-  }
+  } */
 
 
 
@@ -235,10 +241,117 @@ input{
     justify-content: center;
     flex-direction: column;
 }
+.title{
+    margin-bottom: 2rem;
+}
 
 .top-time,
 .bottom-time{
+    
     display: flex;
     align-items:space-between;
     gap: 1rem;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+
+    
 }
+
+.year{
+    position: relative;
+}
+.year:before{
+    position: absolute;
+    content: "Year";
+    top: -25px;
+
+}
+.month{
+    position: relative;
+}
+.month:before{
+    position: absolute;
+    content: "Month";
+    top: -25px;
+
+}
+.day{
+    position: relative;
+}
+.day:before{
+    position: absolute;
+    content: "Day";
+    top: -26px;
+
+
+}
+.hour{
+    position: relative;
+}
+.hour:before{
+    position: absolute;
+    content: "Hour";
+    top: -25px;
+
+}
+.minute{
+    position: relative;
+}
+.minute:before{
+    position: absolute;
+    content: "Minute";
+    top: -25px;
+
+}
+.second{
+    position: relative;
+}
+.second:before{
+    position: absolute;
+    content: "Hour";
+    top: -25px;
+
+}
+
+
+
+/* Take You Note Form Elements */
+
+
+.modal-body #take-note{
+    border: none;
+    width: 250px;
+    display: flex;
+    justify-content:center;
+    align-items:center;
+    
+}
+
+
+input,
+.form-select{
+    border: none;
+    border-radius: 1px;
+    background-color: rgba(128, 128, 128, 0.557);
+    width: 20rem !important;
+    height: 4rem !important;
+    font-size: 2rem !important;
+    text-indent: 0.5rem;
+    
+}
+
+input{
+    width: 41.5rem !important ;
+    font-size: 2rem !important;
+}
+
+.save-button{
+    width: 30rem !important;
+    height: 5rem !important;
+    background-color: #a52a2a;
+    color: white !important;
+    font-size:2rem;
+    font-weight: bold;
+}
+
+
